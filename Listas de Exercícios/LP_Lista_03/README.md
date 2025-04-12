@@ -22,7 +22,7 @@ Para mais informações acesse [Aula 04: Estruturas de decisão.](https://cainaa
 
 3. Entrar com a nota 1 (n1) e nota 2 (n2) e o programa exibe na tela a média. Se a média for menor que 50 imprimir “Reprovado” caso contrário imprimir “Aprovado”.
 
-4. Entrar com a nota 1 (n1) e nota 2 (n2) e o programa exibe na tela a média. Se a médiafor maior ou igual a 50, exibir “Aprovado”, caso contrário solicitar ao usuário a nota daprova de recuperação, tirar nova média entre a média anterior e a prova de recuperação,se a nova média for menor que 50 exibir “Reprovado” caso contrário exibir “Aprovado”.
+4. Entrar com a nota 1 (n1) e nota 2 (n2) e o programa exibe na tela a média. Se a média for maior ou igual a 50, exibir “Aprovado”, caso contrário solicitar ao usuário a nota da prova de recuperação, tirar nova média entre a média anterior e a prova de recuperação,se a nova média for menor que 50 exibir “Reprovado” caso contrário exibir “Aprovado”.
 
 5. Elabore um programa que calcule a média de um aluno e imprima o conceito:
     - A se a média >= 8.5
