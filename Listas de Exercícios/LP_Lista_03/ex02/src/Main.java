@@ -6,9 +6,10 @@ public class Main {
         double raiz, valor1, valor2;
         Scanner in = new Scanner(System.in);
         System.out.println("Digite um valor: ");
+        valor1 = in.nextInt();
+
         System.out.println("Digite outro valor: ");
 
-        valor1 = in.nextInt();
         valor2 = in.nextInt();
 
         if (valor1 < valor2) {
