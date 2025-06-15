@@ -121,6 +121,18 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
 8. Construa um fluxograma para calcular o fatorial de um número fornecido pelo usuário.
    
    ```mermaid
+   flowchart TD
+    start(( Início )) --> input[\Digite um número\]
+    input --> decision{O número é menor que 0?}
+    decision --> |Sim| output1[/Número inválido!/]
+    decision --> |Não| init[Definir fatorial = 1<br>Definir contador = 1]
+    output1 --> finish([ Fim ])
+    init --> loop{Contador <= número?}
+    loop --> |Sim| calc[Fatorial = Fatorial * Contador<br>Contador = Contador + 1]
+    calc --> loop
+    loop --> |Não| output2[/Exibir Fatorial/]
+    output2 --> finish
+
    ```
    
 9. Elabore um fluxograma para verificar se um número digitado pelo usuário é par.
@@ -133,13 +145,32 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
    
    ```mermaid
    flowchart TD
-   A((inicio)) --> B[\Digite um numero\]
+   start(( Início )) --> input1[\Digite um número\]
+   input1 --> decision1{Número % 2 == 0?}
+   decision1 --> |Sim| output1[/O número é PAR!/]
+   decision1 --> |Não| output2[/O número é ÍMPAR!/]
+   output1 --> finish([ Fim ])
+   output2 --> finish
 
    ```
    
 10. Elabore um fluxograma para verificar se um número digitado pelo usuário é primo.
    
    ```mermaid
-   flowchart TD
-   
+      flowchart TD
+    start(( Início )) --> input1[\Digite um número\]
+    input1 --> decision1{Número <= 1?}
+    decision1 --> |Sim| output1[/Não é primo!/]
+    decision1 --> |Não| init[Divisor = 2]
+    output1 --> finish([ Fim ])
+    init --> decision2{Divisor < Número?}
+    decision2 --> |Sim| decision3{Número % Divisor == 0?}
+    decision3 --> |Sim| output2[/Não é primo!/]
+    decision3 --> |Não| increment[Divisor = Divisor + 1]
+    increment --> decision2
+    decision2 --> |Não| output3[/É primo!/]
+    output2 --> finish
+    output3 --> finish
+
    ```
+   
