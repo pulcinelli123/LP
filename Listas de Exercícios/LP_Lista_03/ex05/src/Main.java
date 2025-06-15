@@ -2,13 +2,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        double nota, media;
+        double nota, media, nota2;
 
         Scanner in = new Scanner(System.in);
         System.out.println("Informe o a sua nota: ");
         nota = in.nextDouble();
+        System.out.println("Informe o a sua nota: ");
+        nota2 = in.nextDouble();
 
-        media = in.nextDouble();
+        media = (nota+nota2) / 2;
 
         if (media >= 8.5){
             System.out.println("Conceito A");
